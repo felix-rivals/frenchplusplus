@@ -1,0 +1,106 @@
+a[href="presse.html"] {
+    background-color: #f2f4f7;
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
+    padding:0.2rem;
+    color: #111f4d !important;
+}
+main {
+    text-align: center;
+}
+h1 {
+    font-size: 60px;
+}
+h3 {
+    font-size: 2rem;
+    margin:unset;
+}
+
+.communiques {
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    text-align: left;
+}
+.communiques div {
+    display: flex;
+    width: 60%;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px grey;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+.communiques .date {
+    margin-top: unset;
+    font-weight: lighter;
+    font-size:1rem;
+    font-variant-caps: all-petite-caps;
+}
+.communiques a {
+    text-decoration: none;
+    color: #f2f4f7;
+    font-size: 1.1rem;
+}
+.communiques div:nth-child(3n+1) {
+    background-color:#111f4d;
+    color:#f2f4f7;
+}
+.communiques div:nth-child(3n+2) {
+    background-color:#f2f4f7;
+    color:black;
+}
+.communiques div:nth-child(3n+2) a{
+    color:black;
+}
+.communiques div:nth-child(3n+3) {
+    background-color:#e43a19;
+    color:#f2f4f7;
+    margin-bottom: 3rem;
+}
+
+.contact {
+    display:none;
+}
+.contact div {
+    background-color: #111f4d;
+    padding: 0.7rem 1.2rem;
+    border: 0.2rem solid #f2f4f7;
+    border-radius: 1rem 0rem 0rem 0rem;
+}
+.contact div h2 {
+    text-decoration: underline;
+    text-decoration-color: #e43a19;
+}
+#contact {
+    margin: auto;
+    background-color: #111f4d;
+    color: #f2f4f7;
+    padding: 0.7rem 1.2rem;
+    border: 0.2rem;
+    border-radius: 1rem 0rem 0rem 0rem;
+    position:fixed;
+    right:0px;
+    bottom:0px;
+}
+#contact:hover a, #contact:active a{
+    text-decoration: underline;
+    display:none;
+}
+#contact:hover > div, #contact:active > div {
+    display:flex;
+}
+@media(max-width:830px) {
+    .communiques div {width:80%;}
+}
+@media(max-width:550px) {
+    .communiques div { 
+        width:auto;
+        box-shadow: none;
+    }
+    h3 { font-size: 1.5rem; }
+    h1 { font-size: 2.5rem; }
+    .communiques a { font-size: 0.8rem; }
+}

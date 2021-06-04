@@ -1,0 +1,96 @@
+a[href="devcplusplus.html"] {
+    background-color: #f2f4f7;
+    border-radius: 0.6rem;
+    padding:0.2rem;
+    color: #111f4d !important;
+}
+
+.devcplusplus{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+img + p{
+    margin: 50px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+}
+
+div > p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.requis {
+    height: 200px;
+    width: 50%;
+    background-color: #ff6961;
+    border-radius: 1rem;
+    margin-top: 1%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0.2rem solid #020205;
+}
+
+.requis:hover {
+    background-color: #C23114;
+}
+
+@media(max-width: 699px) {
+    .devcplusplus img {
+        display: none;
+    }
+}
+
+.requis > p {
+    color: white;
+}
+
+input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    background-color: #f2f4f7;
+    padding: 1%;
+    border: 0.2rem solid #020205;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+input:hover {
+    background-color: #111F4D;
+    color: white;
+    font-size: 1rem;
+}
+
+.devcplusplus > img {
+    width: 30%;
+    border-radius: 1rem;
+    margin-right: 1%;
+}
+
+
+header + h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: -3rem;
+}
+
+@media(max-width: 540px) {
+    .requis {
+        height: 280px;
+        width: 65%;
+    }
+
+    header + h1 {
+        font-size: 2.5rem;
+    }
+
+}

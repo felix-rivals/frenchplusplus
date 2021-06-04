@@ -1,0 +1,117 @@
+a[href="rejoindre.html"] {
+    background-color: #f2f4f7;
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
+    padding:0.2rem;
+    color: #111f4d !important;
+}
+
+.offre_emploi, #lien_equipe, #requis_group{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 10px;
+}
+
+img + p{
+    margin: 50px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+}
+
+
+div > p {
+    text-align: center;
+    font-size: 18px;
+}
+
+div[class="offre_emploi"] > img {
+    width: 30%;
+}
+
+.metiers{
+    display: flex;
+    flex-direction: column;
+}
+
+
+p > span {
+    margin-left: 10px;
+}
+
+div[class="liste_metiers"] {
+    display: flex;
+}
+
+div[class="liste_metiers"]  img {
+    width: 50px;
+    margin-left: 50px;
+}
+
+.requis {
+    height: 100px;
+    width: 35%;
+    background-color: #ff6961 ;
+    margin-right: 10px;
+    border-radius: 1rem;
+}
+
+.requis:hover {
+    background-color: #C23114;
+    width: 50%;
+    height: 160px;
+}
+
+.requis > p {
+    color: white;
+}
+
+.sous-texte {
+    display: none;
+}
+
+.requis:hover > .sous-texte {
+    display: block;
+}
+
+@media(max-width: 600px) {
+    .requis > p  {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 699px) {
+    img[src="images/recrutement.jpg"] {
+        display: none;
+    }
+
+}
+
+@media(max-width: 280px) {
+    .liste_metiers {
+        width: 280px;
+    }
+
+    div[class="liste_metiers"] img {
+        width: 40px;
+    }
+
+    .requis {
+        height: 110px;
+    }
+}
+
+header + h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: -3rem;
+}
+
+@media(max-width: 540px) {
+    header + h1 {
+        font-size: 2.5rem;
+    }
+}

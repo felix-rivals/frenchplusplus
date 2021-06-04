@@ -1,0 +1,123 @@
+a[href="contact.html"] {
+    background-color: #f2f4f7;
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
+    padding:0.2rem;
+    color: #111f4d !important;
+}
+
+
+main > h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+main {
+    font-size: 18px;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+div#coords, div#coords2, div#question, div#date, div#message {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-champ {
+    display: block;
+    height: 30px; 
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin-top: 10px;
+
+}
+
+
+
+div#coords > label, div#coords2 > label, div#message > label, div#question > label, div#date > label  {
+    margin: 10px;
+}
+
+select#pays {
+    margin-left: 10px;
+}
+
+input.form-champ {
+    width: auto;
+    margin: 0px;
+}
+
+select {
+    width: 15%;
+}
+
+textarea.form-champ {
+    width: 400px;
+    height: 200px;
+}
+    
+address > ul {
+    margin-top: 0%;
+    margin-left: 10%;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+address > span {
+    margin-left: 5%;
+}
+
+/*taille (div#coords) :1060, */
+
+@media (max-width:1060px) {
+    div#coords {
+        display: flex;
+        flex-direction: column;
+        
+    } 
+    input#inputEmail {
+        margin-bottom: 10px;
+    } 
+
+    select {
+        width: 50%;
+    }
+}
+
+@media (max-width:800px) {
+    div#coords2, div#question, div#date {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px) {
+    div#message {
+        display: flex;
+        flex-direction: column;
+    }
+    textarea.form-champ {
+        width: auto;
+    }
+}
+
+@media (max-width:550px) {
+    main > h2 {
+        font-size: 30px;
+    }
+    main {
+            font-size: 13px;
+    }
+    main > p {
+        text-align: center;
+    }
+}

@@ -1,0 +1,196 @@
+body {
+    background-image: url("../images/tour-eiffel.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right 8vh;
+    background-size: 25%;
+}
+.banner1 {
+    display: flex;
+    flex-flow: row;
+    margin-top:2%;
+    justify-content: center;
+}
+.banner1 img {
+    width:30%;
+    display:block;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-right: 3%;
+}
+.text1 {
+    display:flex;
+    justify-content: center;
+    width:40%;
+    flex-flow: column;
+    font-size: 1.5rem;
+}
+h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin:unset;
+}
+.liens {
+    flex-wrap: wrap;
+    margin-top: 2vh;
+    display:flex;
+    font-weight: bold;
+}
+.liens > a {
+    margin:1%;
+}
+.telechargement {
+    background-color: #e43a19;
+    text-align: center;
+    text-decoration: none;
+    color: #f2f4f7;
+    padding: 0.7rem 1.2rem;
+    border: 0.2rem solid #020205;
+    border-radius: 1rem;
+}
+.telechargement:hover {
+    background-color: #c23114;
+}
+.documentation {
+    background-color: #f2f4f7;
+    text-align: center;
+    text-decoration: none;
+    /* color: #111f4d; */
+    color: #464646;
+    padding: 0.7rem 1.2rem;
+    border: 0.2rem solid #464646;
+    border-radius: 1rem;
+}
+.documentation:hover {
+    background-color: #464646;
+    color: #f2f4f7;
+
+}
+.banner2 {
+    display:flex;
+    flex-flow:column;
+    margin-top:10vh;
+    height:auto;
+    background-color:#dedfe2;
+}
+.banner2 div {
+    display:flex;
+    flex-flow:row;
+    width:auto;
+    margin-top:2vh;
+    margin-bottom:2vh;
+    justify-content: center;
+}
+.banner2 div div {
+    width: 80%;
+    display:flex;
+    flex-flow:row;
+}
+.banner2 h3 {
+    font-size:1.9rem;
+    margin: 1%;
+}
+.banner2 p {
+    margin:1%;
+    font-size: 1.2rem;
+    font-style:oblique;
+}
+.banner2 div div div {
+    display:block;
+}
+.banner2 div img {
+    height: 5rem;
+    width: 5rem;
+    padding:3%;
+}
+
+.banner3 {
+    display:flex;
+    flex-flow:row;
+    align-items:center;
+    margin-top:3vh;
+}
+.banner3 pre {
+    margin:3%;
+    width:fit-content;
+    background-color:#073642; 
+    color: #eee8d5;
+    padding:1.5%;
+    border: 0.2rem solid #464646;
+    border-radius: 1rem;
+    font-size:1rem;
+    font-family: monospace;
+}
+.banner3 div {
+    margin:1%;
+    font-size: 1.4rem;
+}
+.banner3 div p {
+    margin-bottom:0%;
+}
+.banner4 {
+    display:flex;
+    flex-flow:row;
+    align-items:center;
+    justify-content: center;
+    margin-bottom:3%;
+    margin-top:3vh;
+}
+.banner4 img {
+    width:40%;
+}
+
+@media(max-width:1010px) {
+    .banner1 {flex-flow: column;
+              align-items: center;
+    }
+    .text1 {text-align: center;
+              width: 90%;
+    }
+    .banner1 img {width:40%;}
+    .liens {justify-content: center;}
+    .banner3 { 
+        flex-flow: column-reverse;
+        align-items:center;
+        text-align:center;
+    }
+    .banner4 { 
+        flex-flow: column;
+        text-align:center;
+    }
+}
+@media(max-width:600px) {
+    .banner2 div{ 
+        flex-flow: column;
+        align-items:center;
+    }
+    .banner3 pre {
+        width:90%;
+        overflow-y: scroll;
+    }
+    .banner4 img {
+        width:80%;
+    }
+}
+@media(max-width:500px) {
+    body { 
+        background-image: none;
+    }
+    h2 {
+        font-size:1.8rem;
+    }
+    p {
+        font-size:1.2rem;
+    }
+    .banner2 {
+        flex-flow: column;
+    }
+}
+@media(max-width:350px) {
+    .banner2 h3{
+        font-size:1.6rem;
+    }
+    .banner2 p{
+        font-size:1rem;
+    }
+}

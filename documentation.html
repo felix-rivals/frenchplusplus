@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/documentation.css">
+        <link rel="icon" type="image/svg" href="images/logo.svg"/>
+        <title>Documentation – French++</title>
+    </head>
+    <body>
+        <header id=haut>
+            <a class=logo href="index.html"><img class="logo" src="images/logo.svg" alt='Le logo'></a>
+            <div class=titre>
+                <h1><a id=titre href=./index.html>FRENCH++</a></h1>
+                <p>Le meilleur langage de programmation made in France universel.</p>
+            </div>
+            <div class="burger"><img src="images/menu.png" alt="Burger" width="30">
+                <div id="menu2">
+                    <div><a href="documentation.html">Documentation</a></div>
+                    <div><a href="presse.html">Presse</a></div>
+                    <div><a href="faq.html">FAQ</a></div>
+                    <div><a href="contact.html">Contact</a></div>
+                    <div><a href="equipe.html">Équipe</a></div>
+                    <div><a href="rejoindre.html">Nous rejoindre</a></div>
+                </div>
+            </div>
+            <nav class=navbar>
+                <div><a href="documentation.html">Documentation</a></div>
+                <div><a href="presse.html">Presse</a></div>
+                <div><a href="faq.html">FAQ</a></div>
+                <div><a href="contact.html">Contact</a></div>
+                <div><a href="equipe.html">Équipe</a></div>
+                <div><a href="rejoindre.html">Nous rejoindre</a>
+                    <div id="submenu">
+                        <div><a href="devweb.html">Dev. web</a></div>
+                        <div><a href="webdesigner.html">Webdesigner</a></div>
+                        <div><a href="devcplusplus.html">Dev. C++</a></div>
+                    </div>
+                </div>
+                
+            </nav>
+        </header>
+
+        <main>
+            <nav class=navdoc>
+                <h2>Index</h2>
+                <a href=#Introduction>0 - Introduction</a>
+                <a href=#Variables>1 - Les Variables</a>
+                <a href=#entier> ➼ entier</a>
+                <a href=#booleen> ➼ Booléen</a>
+                <a href=#Conditions>2 - Les Conditions</a>
+                <a href=#Si...Sinon> ➼ Si...Sinon</a>
+                <a href=#Boucles>3 - Les Boucles</a>
+                <a href=#Pour> ➼ Pour</a>
+                <a href=#TantQue> ➼ Tant Que</a>
+            </nav>
+            <div class=documentation>
+                <h1>📕 <u>Documentation officielle du langage French++</u></h1>
+                <h2 id=Introduction>0 - Introduction</h2>
+                <p>
+                    Le French++ est un langage de programmation pensé pour être utilisé dans la langue de Molière. 
+                    Toute sa syntaxe est composée exclusivement de mots du dictionnaire français afin de faciliter
+                    son utilisation pour les personnes francophones. Cependant, ce n'est pas la seule promesse de ce
+                    langage nouveau. En effet, l'une de ses autres spécificités est sa puissance et sa légèreté comparables
+                    au langage C. On peut dire que le French++ offre une réelle révolution dans l'univers de l'informatique
+                    et qu'il saura probablement s'imposer comme la référence ultime.
+                </p>
+                <h2 id=Variables>1 - Les Variables: </h2>
+                <pre>
+// La déclaration d'une variable :
+
+type-variable nom-variable = valeur ;
+                </pre>
+                <p>Il existe plusieurs types de variables tel que :</p> 
+                <ul>
+                    <li>les entiers </li>
+                    <li>les booléens </li>
+                    <li>les nombres décimales</li>
+                    <li>les caractères </li>
+                    <li>les chaines de caractères</li>
+                </ul>
+
+                <h3 id=entier>• Entier</h3>
+                <pre>
+// EXEMPLE:
+
+entier x = 0;
+entier y = 1 + 3;
+entier z = x + y;
+                </pre>
+                <h3 id=booleen>• Booléen</h3>
+                <pre>
+// EXEMPLE:
+
+booléen x = vrai;
+booléen y = faux;
+                </pre>
+                <h2 id=Conditions>2 - Les Conditions: </h2>
+                <h3 id=Si...Sinon>• Si...Sinon</h3>
+                <pre>
+// Si la condition est vrai alors
+
+Si ( condition ) Alors {  
+    bloc d'instruction
+}   </pre>
+                <pre>
+// EXEMPLE 1: 
+
+Si (pluie == vrai) Alors {
+    ...
+}
+
+// EXEMPLE 2: 
+
+Si (pluie == faux) Alors {
+    ...
+} Sinon {
+    ...
+}
+                </pre>
+                <h2 id=Boucles>3 - Les Boucles: </h2>
+                <h3 id=Pour>• Pour</h3>
+                <pre>
+Pour (initialisation; intervalle à parcourir; incrémentation) Faire {
+    bloc d'instruction
+}                </pre>
+                <pre>
+// EXEMPLE: 
+
+Pour (entier x = 0; x &lt; 3; x++) Faire {
+    ...
+}
+                </pre>
+                <h3 id=TantQue>• Tant Que</h3> 
+                <pre>
+TantQue ( condition ) Faire {
+    Bloc d'instruction
+}               </pre>
+                <pre>
+// EXEMPLE: 
+
+TantQue (x &lt; 3) Faire {
+    ...
+}
+                </pre>
+            </div>
+        </main>
+        <footer>
+            <div id='flex_footer'>
+                <div class='colonne'>
+                    <img src="images/logo-footer.png" alt="logo">
+                </div>
+                <div class='colonne'>
+                    <h4>Besoin d'aide ?</h4>
+                    <a href="">Status du serveur</a>
+                    <a href="">Forum d'entraide</a>
+                    <a href="">Signaler un bug</a>
+                </div>
+                <div class='colonne'>
+                    <h4>Politique de confidentialité</h4>
+                    <a href="">Licences</a>
+                    <a href="">Code de conduite</a>
+                    <a href="">Politique d'utilisation</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
